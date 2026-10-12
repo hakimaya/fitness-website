@@ -98,12 +98,14 @@ span {
     border-radius: 50px;
 }
 .testimonials{
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
 }
 .stars{
-    display: flex; 
+    display: flex;
+    justify-content: center;
+    
     
     
 }
