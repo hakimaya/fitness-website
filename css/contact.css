@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.bodi {
+    background-color: black;
+    margin: 10px;
+    min-height: 490px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.left {
+    flex: 1;
+    max-width: 400px;
+}
+
+.subtitle {
+    color: #FFE34F;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.left h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.s1,
+.s2,
+.s3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+.s1 img,
+.s2 img,
+.s3 img {
+    width: 28px;
+    height: 28px;
+}
+
+.rigth {
+    background-color: #2B272B;
+    width: 325px;
+    padding: 27px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.rigth form h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.rigth-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rigth-input input,
+.rigth-input textarea {
+    width: 100%;
+    background-color: #101010;
+    color: white;
+    border: 1px solid #222;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+.rigth-input textarea {
+    height: 67px;
+    resize: vertical;
+}
+
+.rigth button {
+    background-color: #FFE34F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 270px;
+    height: 30px;
+}
+
+.rigth button:hover {
+    background-color: #ffd34f;
+}
