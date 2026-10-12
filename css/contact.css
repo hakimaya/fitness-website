@@ -6,7 +6,6 @@
 
 body {
     background-color: #1E1E1E;
-    font-family: 'Inter', sans-serif;
     color: white;
 }
 
@@ -63,4 +62,53 @@ body {
 .s3 img {
     width: 28px;
     height: 28px;
+}
+
+.rigth {
+    background-color: #2B272B;
+    width: 325px;
+    padding: 27px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.rigth form h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.rigth-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rigth-input input,
+.rigth-input textarea {
+    width: 100%;
+    background-color: #101010;
+    color: white;
+    border: 1px solid #222;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+.rigth-input textarea {
+    height: 67px;
+    resize: vertical;
+}
+
+.rigth button {
+    background-color: #FFE34F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 270px;
+    height: 30px;
+}
+
+.rigth button:hover {
+    background-color: #ffd34f;
 }
