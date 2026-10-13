@@ -4,4 +4,20 @@
     list-style: none;
     text-decoration: none;
 }
-
+body{
+    background-color: black;
+}
+.upper{
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center ;
+    color: white;
+}
+.upper h2{
+    font-size :40px;
+}
+.lower{
+    color:white;
+}
