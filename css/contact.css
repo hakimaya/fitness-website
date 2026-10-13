@@ -39,6 +39,7 @@ body {
 }
 
 .bodi {
+    background-image: url(/images/7caab576344e5f34021b5f7fbac69f6c69dbc2f9.png);
     min-height: 490px;
     border-radius: 6px;
     display: flex;
@@ -46,6 +47,7 @@ body {
     align-items: center;
     gap: 40px;
     height: 600px;
+    margin: 70px;
 }
 
 .left {
