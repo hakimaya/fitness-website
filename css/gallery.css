@@ -35,6 +35,9 @@ nav a:hover {
 h1{
     padding: 50px;
 }
+
+
+
 .titleingallery{
     display: flex;
     align-items: center;
@@ -69,4 +72,7 @@ h1{
     color: white;
     font-size: 28px;
     cursor: pointer;
+}
+.main-nav .mobilecontact{
+    display: none;
 }
