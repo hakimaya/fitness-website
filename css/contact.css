@@ -55,12 +55,8 @@ nav a:hover {
     background-color: #ffe04d;
 }
 
-body {
-    background-color: black;
-    color: white;
-}
-
 .bodi {
+    font-family: "Bebas Neue", sans-serif;
     background-image: url(/images/7caab576344e5f34021b5f7fbac69f6c69dbc2f9.png);
     min-height: 490px;
     border-radius: 6px;
@@ -85,17 +81,15 @@ body {
 }
 
 .left h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 38px;
+    font-size: 60px;
     line-height: 1.15;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .description {
-    font-size: 12px;
-    line-height: 1.6;
-    margin-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
 }
 
 .s1,
@@ -167,22 +161,23 @@ body {
 #section {
     display: flex;
     flex-direction: row;
-    height: 400px;
-    gap: 50px;
-    justify-content: space-around;
+    height: 420px;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 50px;
 }
 
 .ss summary {
-    font-size: larger;
+    font-size: large;
 }
 
 .ss p {
-    font-size: medium;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .ss {
-    height: 45px;
+    height: 50px;
 }
 
 .left2 h2 {
@@ -192,3 +187,10 @@ body {
 .fa-subtitle {
     color: #ffd34f
 }
+
+.faq-description {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.
