@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
 h1,
 h2,
 h3 {
@@ -16,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem 6rem;
 }
 
 nav {
@@ -31,6 +38,21 @@ nav a {
 
 nav a:hover {
     color: #ffe04d;
+}
+
+.btn {
+    background-color: #ffff;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #ffe04d;
 }
 
 body {
