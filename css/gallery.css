@@ -32,6 +32,25 @@ nav a {
 nav a:hover {
     color: #ffe04d;
 }
+h1{
+    padding: 50px;
+}
+.titleingallery{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffe04d;
+    padding: 50px;
+    flex-shrink: 0;
+}
+.titleingallery::before{
+    content:"";
+    width: 30px;
+    height: 3px;
+    background-color: #ffe04d;
+}
 .btn {
     background-color: #ffff;
     color: black;
@@ -41,4 +60,11 @@ nav a:hover {
     border-radius: 3px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: background-color 0.2s;
+}
+.menu-toggle{
+    border: none;
+    background:none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
 }
