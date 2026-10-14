@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +11,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/gallery.css">
 </head>
+
 <body>
-    <header>
+
+    <header class="siteheader">
+
+
         <a href="index.html" class="logo" aria-label="Fitnex-home">
             <img src="images/logo1.png">
         </a>
-        <nav >
+        
+
+        <nav class="main-nav" id="main-nav">
                 <a href="about.html">About</a>
                 <a href="program.html">Program</a>
-                <a href="">Trainers</a>
-                <a href="">Pricing</a>
-                <a href="">Testimonial</a>
+                <a href="gallery.html">Gallery</a>
+
+                <a href="contact.html" class="mobilecontact">contact</a>
         </nav>
-        <a href="contact.html" class="btn">CONTACT US</a>
+
+        <!--- hamburger  -->
+        <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-nav">
+        ☰
+        </button>
+
+
+        <a href="contact.html" class="btn desktop-contact">CONTACT US</a>
+
+
     </header>
+
+
     <main>
-        <h3>_</h3>
+
+
+        <section class="gallery-section">
+
+                <h3 class="titleingallery">BEFORE & AFTER</h3>
+                <h1 class="textgallery">LET'S SEE OUR STUDENTS HAVE TRANSFORMED</h1>
+        </section>
+
+
     </main>
+
+
 </body>
 </html>
