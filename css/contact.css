@@ -5,20 +5,67 @@
 }
 
 body {
-    background-color: #1E1E1E;
+    margin: 0;
+    background-color: black;
     color: white;
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffe04d;
+}
+
+.btn {
+    background-color: #ffff;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #ffe04d;
 }
 
 .bodi {
-    background-color: black;
-    margin: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    background-image: url(/images/7caab576344e5f34021b5f7fbac69f6c69dbc2f9.png);
     min-height: 490px;
     border-radius: 6px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 40px;
-    padding: 50px;
+    height: 600px;
+    margin: 70px;
 }
 
 .left {
@@ -34,17 +81,15 @@ body {
 }
 
 .left h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 38px;
+    font-size: 60px;
     line-height: 1.15;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .description {
-    font-size: 12px;
-    line-height: 1.6;
-    margin-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
 }
 
 .s1,
@@ -112,3 +157,40 @@ body {
 .rigth button:hover {
     background-color: #ffd34f;
 }
+
+#section {
+    display: flex;
+    flex-direction: row;
+    height: 420px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.ss summary {
+    font-size: large;
+}
+
+.ss p {
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ss {
+    height: 50px;
+}
+
+.left2 h2 {
+    font-size: 60px;
+}
+
+.fa-subtitle {
+    color: #ffd34f
+}
+
+.faq-description {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.
