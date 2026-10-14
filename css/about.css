@@ -26,6 +26,7 @@
     
      gap: 150px;
      align-items: center;
+     margin-top: 50px;
  }
 
  .equipe {
@@ -52,7 +53,7 @@
  .t3 {
      display: flex;
      flex-direction: column;
-     grid-template-columns: repeat(2, 1fr);
+     
      gap: 10px;
      align-items: start;
  }
@@ -81,17 +82,8 @@
  }
 
 
-
-
-
-
-
-
-
-
  .team {
      display: flex;
-
      margin-left: 120px;
      gap: 25px;
 
@@ -100,7 +92,7 @@
  .team img {
      height: 400px;
      width: 250px;
-     margin: 5px;
+     
      border-radius: 10px;
 
  }
@@ -109,7 +101,7 @@
      color: #FFE34F;
      text-transform: uppercase;
      font-size: 12px;
-     margin: 20px;
+     
  }
 .our{
     margin-left: 120px;
@@ -142,14 +134,15 @@
 
  @media screen and (max-width: 600px) {
      .apropos-contenu {
-         display: grid;
+         display: flex;
+         flex-direction: column;
          place-items: center;
          padding-left: 20px;
 
      }
 
      .apropos-contenu img {
-         justify-content: center;
+         justify-content: end;
      }
 
      .pa {
