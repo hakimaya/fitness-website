@@ -344,3 +344,27 @@ a:focus-visible {
     max-width: 320px;
   }
 }
+
+.barre {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  background-color: #ffe600;
+  color: #333333;
+  text-align: center;
+  overflow: hidden;
+}
+
+.barre p {
+  margin: 0;
+  padding: 0 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.barre span {
+  margin: 0 18px;
+}
