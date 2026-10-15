@@ -2,31 +2,34 @@
      box-sizing: border-box;
      margin: 0;
      padding: 0;
-     display: grid;
-     grid-template-columns: 1fr;
-     background-color: black;
-     color: white;
+     
  }
 
  body {
     font-family: "Inter", sans-serif;
-     font-size: 16px;
      line-height: 1.5;   
+     background-color: black;
+     color: white
  }
 
  .apropos-contenu {
      display: flex;
-     gap: 150px;
+     gap: 50px;
      align-items: center;
-     margin-top: 50px;
+     margin-top: 50px auto 0;
+     max-width: 1200px;
+ }
+ .apropos-contenu {
+    box-shadow: inset;
+    border-radius: 6px;
+
  }
 
  .equipe {
-     height: 500px;
      width: 400px;
-     
-     margin-left: 120px;
-     border-radius: 5px;
+     height: auto;
+     max-width: 100%;
+     margin-left: 0;
  }
 
  h1,
@@ -85,7 +88,6 @@
  .team img {
      height: 400px;
      width: 250px;
-     
      border-radius: 10px;
 
  }
@@ -127,23 +129,23 @@
 
  .pa {
      font-family: "Bebas Neue", sans-serif;
-     font-size: 11px;
+     font-size: 15px;
  }
 
  @media screen and (max-width: 600px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
+    
      .apropos-contenu {
          display: flex;
          flex-direction: column;
-         gap: 50px;
+         align-items: stretch;
+         gap: 25px;
+         margin-top: 20px;
      }
      
      .conatainer{
-        display: block;
-        padding: 10px;
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+        gap: 20px;
      }
      .p1{
         font-size: 30px;
@@ -156,10 +158,11 @@
      }
 
      .pa{
-        margin: 15px;
+        margin: 15px 0;
+        font-size: 15px;
      }
      .pad{
-        margin:20px ;
+        margin:40px 15px ;
      }
      .pad p{
         margin: 15px;
@@ -182,20 +185,26 @@
 
      .pa {
          font-size: 20px;
-         align-self: center;
-         font-family:  "Bebas Neue", sans-serif;;
+         margin: 12px;
      }
      .p2 {
-     display: flex;
+     
      flex-direction: column;
      gap: 10px;
-    font-family:  "Bebas Neue", sans-serif;;
+    font-family:  "Bebas Neue", sans-serif;
 
  }
  .team{
-    margin-top: 10px;
+    margin: 20px 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 15px;
+ }
+ .team img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/6;
+    object-fit: cover;
  }
 .para{
     display: grid;
@@ -203,12 +212,19 @@
 }
 
  }
-
- .conatainer img {
-     
- }
-
  .icone {
      display: flex;
      gap: 10px;
  }
+
+
+ @media (min-width: 768px) {
+  .apropos-contenu { flex-direction: row;
+gap: 20px; }
+  .para{
+    flex-direction: column;
+  }
+  .pa{
+    font-size: 30px;
+  }
+}
