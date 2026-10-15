@@ -1,135 +1,182 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitNix Contact</title>
-    <meta name="viewport" content="width-device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <title>About | FITNIX</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/navbar.js" defer></script>
 </head>
-
 <body class="page-about">
-     
-     <header class="siteheader">
 
+<header class="siteheader">
+    <a href="index.html" class="logo" aria-label="FITNIX Home">
+        <img src="../images/logo1.png" alt="FITNIX Logo">
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="mobilecontact">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button"
+        aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="main-nav">☰</button>
+    <a href="contact.html" class="btn desktop-contact">CONTACT US</a>
+</header>
 
-        <a href="index.html" class="logo" aria-label="Fitnex-home">
-            <img src="../images/logo1.png">
-        </a>
-        
+<main>
+    <section>
+        <div class="apropos-contenu">
+            <img
+                src="../images/4fe0f09976c67680a4b84b65b23d69ba6c97dc8a.png"
+                alt="FITNIX coaches" class="equipe">
 
-        <nav class="main-nav" id="main-nav">
-                <a href="about.html" class="about">About</a>
-                <a href="program.html">Program</a>
-                <a href="gallery.html">Gallery</a>
+            <div class="para">
+                <h1 class="subtitle">— About us</h1>
+                <p class="p1">BEGIN YOUR FITNESS</p>
+                <p class="p1">STORY WITH FITNIX</p>
+                <p class="pa">
+                    We are more than just a fitness center —
+                    we're a movement built around real transformation.
+                    Our mission is simple: help people become stronger,
+                    healthier, and more confident every single day.
+                </p>
 
-                <a href="contact.html" class="mobilecontact">contact</a>
-        </nav>
-
-        <!--- hamburger  -->
-        <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-        aria-controls="main-nav">
-        ☰
-        </button>
-
-
-        <a href="contact.html" class="btn desktop-contact">CONTACT US</a>
-
-
-    </header>
-
-
-    <main>
-        <section>
-            <div class="apropos-contenu">
-             <img src="../images/4fe0f09976c67680a4b84b65b23d69ba6c97dc8a.png" alt="L'équipe de coachs de FitNix réunie dans la salle" class="equipe">
-
-                <div>
-                    <div class="para">
-                    <h2 class="subtitle">— About us</h2>
-                    <p class="p1">BEGIN YOUR FITNESS</p>
-                    <p class="p1"> STORY WITH FITNIX</p>
-                    <P class="pa">we are more than just a fitness center - we're a mouvement built around real <br>transformation . our
-                        mission is simple
-                        :helpe peaple become stranger ,healter, and more confident every single day. </P>
-                    <div class="conatainer">
-                        <div class="t3">
-                            <div class="icone">
-                            <img src="../images/variant=1.png" alt="NUTRITION" ><h3>NUTRITION GUIDANCE </h3>
-                            </div>
-                            <P class="pa">We measure progress, not just promises- and we deliver.</P>
+                <div class="conatainer">
+                    <div class="t3">
+                        <div class="icone">
+                            <img src="../images/variant=1.png" alt="Nutrition">
+                            <h3>NUTRITION GUIDANCE</h3>
                         </div>
-                        <div class="t3">
-                            <div class="icone">
-                            <img src="../images/variant=2.png" alt="COACHING">
+                        <p class="pa">
+                            We measure progress, not just promises —
+                            and we deliver.
+                        </p>
+                    </div>
+
+                    <div class="t3">
+                        <div class="icone">
+                            <img src="../images/variant=2.png" alt="Coaching">
                             <h3>GOAL-FOCUSED COACHING</h3>
-                            </div>
-                            <p class="pa">Backed by experience and a deep commitment to your success</p>
                         </div>
+                        <p class="pa">
+                            Backed by experience and a deep
+                            commitment to your success.
+                        </p>
                     </div>
-                    <button class="btna">MEET OUR TRAINERS</button>
-                    </div>
-
-
                 </div>
 
+                <button class="btna" type="button"
+                    onclick="document.getElementById('our-team').scrollIntoView({behavior:'smooth'})">
+                    MEET OUR TRAINERS
+                </button>
             </div>
-        </section>
-        <section class="pad">
-            <div class="our">
+        </div>
+    </section>
+
+    <section class="pad" id="our-team">
+        <div class="our">
             <p class="subtitle">— Our Team</p>
             <div class="p2">
-            <h2 class="title">Meet Our Trainers</h2>
-            <p class="p3">Certified, experienced and obsessed with your progress.<br>
-              Every coach builds your plan around you.</p>
-              </div>
+                <h2>Meet Our Trainers</h2>
+                <p>
+                    Certified, experienced and obsessed with your progress.
+                    Every coach builds your plan around you.
+                </p>
             </div>
+        </div>
 
-            <div class="team">
-
-
-            <div >   
-            <img src="../images/c1.jpg" alt="Strength Coach" >
-            <p>Marcus Reid</p>
-            <p class="subtitle">Head Strength Coach</p>
+        <div class="team">
+            <div>
+                <img src="../images/c1.jpg" alt="Strength Coach">
+                <p>Marcus Reid</p>
+                <p class="subtitle">Head Strength Coach</p>
             </div>
-
-
-
-            <div >
-            <img src="../images/télécharger.jpg" alt="Conditioning">
-            <p>Sofia Hart</p>
-            <p class="subtitle">HIIT & Conditioning</p>
+            <div>
+                <img src="../images/télécharger.jpg" alt="Conditioning Coach">
+                <p>Sofia Hart</p>
+                <p class="subtitle">HIIT &amp; Conditioning</p>
             </div>
-
-
-            <div >
-            <img src="../images/c5.jpg" alt="Bodybuilding">
-            <p >Daniel Cruz</p>
-            <p class="subtitle">Bodybuilding Coach</p>
+            <div>
+                <img src="../images/c5.jpg" alt="Bodybuilding Coach">
+                <p>Daniel Cruz</p>
+                <p class="subtitle">Bodybuilding Coach</p>
             </div>
-
-
-            <div >
-            <img src="../images/c3.jpg" alt="Nutrition">
-            <p >Amira Lane</p>
-            <p class="subtitle">Nutrition & Mobility</p>
+            <div>
+                <img src="../images/c3.jpg" alt="Nutrition Coach">
+                <p>Amira Lane</p>
+                <p class="subtitle">Nutrition &amp; Mobility</p>
             </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
+
+<!-- GLOBAL FOOTER -->
+<footer class="pied">
+    <div class="pied-haut">
+        <div class="pied-col">
+            <a href="index.html" class="pied-logo">
+                <img src="../images/logo1.png" alt="FITNIX Home">
+            </a>
+            <p class="pied-texte">
+                Science-backed training, expert coaching and a
+                community that never lets you quit.
+            </p>
+            <ul class="reseaux">
+                <li><a href="#" aria-label="Instagram">IG</a></li>
+                <li><a href="#" aria-label="Facebook">FB</a></li>
+                <li><a href="#" aria-label="X">X</a></li>
+                <li><a href="#" aria-label="YouTube">YT</a></li>
+                <li><a href="#" aria-label="TikTok">TT</a></li>
+            </ul>
+        </div>
+        <div class="pied-col">
+            <h2 class="pied-titre">Explore</h2>
+            <nav class="pied-liens" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="program.html">Programs</a>
+                <a href="about.html#our-team">Trainers</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="pied-col">
+            <h2 class="pied-titre">Hours</h2>
+            <ul class="horaires">
+                <li>Mon–Fri · 6am–10pm</li>
+                <li>Saturday · 7am–9pm</li>
+                <li>Sunday · 8am–8pm</li>
+                <li class="jaune">24/7 for Pro &amp; Elite</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <h2 class="pied-titre">Newsletter</h2>
+        <p>Weekly workouts, recipes and member offers.</p>
+        <form class="newsletter-form" action="#" method="get">
+            <label for="news-email" class="cache">Your email</label>
+            <input type="email" id="news-email" name="email"
+                placeholder="Your email" required>
+            <button type="submit" aria-label="Subscribe">&rarr;</button>
+        </form>
+    </div>
+
+    <div class="pied-bas">
+        <p>&copy; 2026 FITNIX. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> ·
+            <a href="#">Terms</a> ·
+            <a href="#">Cookies</a>
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
