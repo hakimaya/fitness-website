@@ -12,22 +12,45 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
-   <header>
+<body class="page-about">
+     
+     <header class="siteheader">
+
+
         <a href="index.html" class="logo" aria-label="Fitnex-home">
             <img src="../images/logo1.png">
         </a>
-        <nav >
-                <a href="about.html">About</a>
+        
+
+        <nav class="main-nav" id="main-nav">
+                <a href="about.html" class="about">About</a>
                 <a href="program.html">Program</a>
-                <a href="">Trainers</a>
-                <a href="">Pricing</a>
-                <a href="">Testimonial</a>
+                <a href="gallery.html">Gallery</a>
+
+                <a href="contact.html" class="mobilecontact">contact</a>
         </nav>
-        <a href="contact.html" class="btn">Contact Us</a>
+
+        <!--- hamburger  -->
+        <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-nav">
+        ☰
+        </button>
+
+
+        <a href="contact.html" class="btn desktop-contact">CONTACT US</a>
+
+
     </header>
+
+
     <main>
         <section>
             <div class="apropos-contenu">
@@ -69,7 +92,7 @@
             <p class="subtitle">— Our Team</p>
             <div class="p2">
             <h2 class="title">Meet Our Trainers</h2>
-            <p class="">Certified, experienced and obsessed with your progress.<br>
+            <p class="p3">Certified, experienced and obsessed with your progress.<br>
               Every coach builds your plan around you.</p>
               </div>
             </div>
