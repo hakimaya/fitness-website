@@ -72,24 +72,44 @@ nav a:hover {
 .main-nav .mobilecontact{
     display: none;
 }
-@media(max-width: 1024px)
-{
-    /**/
-    header{
+
+@media (max-width: 1024px) {
+
+    header {
         position: relative;
-        padding: 16 px 42px;
+        padding: 16px 42px;
     }
-    .main-nav{
+
+    .main-nav {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: #171717;
+        padding: 20px;
+        z-index: 10;
     }
-    .menu-toggle
-    {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav.is-open {
+        display: flex;
+    }
+
+    .desktop-contact {
+        display: none;
+    }
+
+    .main-nav .mobilecontact {
         display: block;
     }
 }
+
 
 /* ===== BEFORE & AFTER ===== */
 
@@ -205,4 +225,144 @@ nav a:hover {
 .review-card span {
     color: #aaaaaa;
     font-size: 13px;
+}
+
+
+.pied {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 40px 24px;
+  background-color: #08090b;
+  color: white;
+}
+
+.pied::after {
+  content: "FITNIX";
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.pied-haut {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.pied-logo img {
+  width: 100px;
+}
+
+.pied-texte {
+  max-width: 260px;
+  font-size: 13px;
+}
+
+.pied-titre {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.pied a {
+  color: white;
+  text-decoration: none;
+}
+
+.pied a:hover {
+  color: #ffe600;
+}
+
+.reseaux {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+.pied-liens {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.horaires {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+
+.horaires li {
+  margin-bottom: 8px;
+}
+
+.horaires .jaune {
+  color: #ffe600;
+  font-weight: 700;
+}
+
+.newsletter {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 13px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 300px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #333333;
+  background: transparent;
+  color: white;
+}
+
+.newsletter-form button {
+  width: 44px;
+  border: none;
+  background-color: #ffe600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cache {
+  position: absolute;
+  left: -9999px;
+}
+
+.pied-bas {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #222222;
+  font-size: 11px;
+  color: #bbbbbb;
+}
+
+.pied-bas p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .pied-haut {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .pied::after {
+    font-size: 90px;
+  }
 }
