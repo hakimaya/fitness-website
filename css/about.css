@@ -32,11 +32,10 @@
      margin-left: 0;
  }
 
- h1,
- h2 {
+ .subtitle {
      margin: 5px;
      color: yellow;
-     font-size: 10px;
+     font-size: 12px;
      font-family: "Bebas Neue", sans-serif;
  }
 
@@ -44,6 +43,7 @@
      font-size: 50px;
      padding: 0;
      margin: 0;
+     font-family: "Bebas Neue", sans-serif;
  }
 
  .t3 {
@@ -92,17 +92,11 @@
 
  }
 
- .subtitle {
-    font-family: "Bebas Neue", sans-serif;
-     color: #FFE34F;
-     text-transform: uppercase;
-     font-size: 15px;
-     
- }
+ 
 .our{
     margin-left: 120px;
 }
-  h2 {
+  .title {
     font-family: "Bebas Neue", sans-serif;
      font-size: 38px;
      line-height: 1.15;
@@ -129,7 +123,6 @@
 
  .pa {
      font-family: "Bebas Neue", sans-serif;
-     font-size: 15px;
  }
 
  @media screen and (max-width: 600px) {
@@ -148,7 +141,7 @@
         gap: 20px;
      }
      .p1{
-        font-size: 30px;
+      
      }
      .our{
         margin: 0;
@@ -159,23 +152,19 @@
 
      .pa{
         margin: 15px 0;
-        font-size: 15px;
      }
      .pad{
         margin:40px 15px ;
      }
      .pad p{
         margin: 15px;
-        font-size: 20px;
+        
      }
      .team{
         margin: 15px;
         gap: 5px;
      }
-     .subtitle{
-        font-size: 20px;
-        margin: 10px;
-     }
+     
 
      .apropos-contenu img {
         display: flex;
@@ -184,7 +173,7 @@
      }
 
      .pa {
-         font-size: 20px;
+         
          margin: 12px;
      }
      .p2 {
@@ -225,6 +214,6 @@ gap: 20px; }
     flex-direction: column;
   }
   .pa{
-    font-size: 30px;
+    
   }
 }
