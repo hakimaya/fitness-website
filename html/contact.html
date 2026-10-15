@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FitNix fitness club contact and free trial">
     <title>FitNix Contact</title>
-    <link rel="stylesheet" href="../css/contact.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="page-contact">
     <header>
         <a href="index.html" class="logo" aria-label="Fitnex-home">
             <img src="../images/logo1.png">
@@ -115,7 +116,7 @@
 
             <div class="pied-col">
                 <a href="index.html" class="pied-logo">
-                    <img src="images/logo1.png" alt="FitNix, retour à l'accueil">
+                    <img src="../images/logo1.png" alt="FitNix, retour à l'accueil">
                 </a>
                 <p class="pied-texte">Science-backed training, expert coaching and a community that never lets you quit.</p>
                 <ul class="reseaux">
@@ -138,6 +139,8 @@
                     <a href="contact.html">Contact</a>
                 </nav>
             </div>
+
+
             <div class="pied-col">
                 <h2 class="pied-titre">Hours</h2>
                 <ul class="horaires">
@@ -147,21 +150,29 @@
                     <li class="jaune">24/7 for Pro &amp; Elite</li>
                 </ul>
             </div>
+
         </div>
+
+
         <div class="newsletter">
             <h2 class="pied-titre">Newsletter</h2>
             <p>Weekly workouts, recipes and member offers.</p>
-            <form class="newsletter-form">
+
+            <form class="newsletter-form" action="index.html" method="get">
                 <label for="news-email" class="cache">Your email</label>
+
                 <input type="email" id="news-email" placeholder="Your email" required>
+
                 <button type="submit" aria-label="S'abonner"> &rarr; </button>
             </form>
+
+
             <div class="pied-bas">
                 <p>&copy; 2026 FitNix. All rights reserved.</p>
                 <p><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Cookies</a></p>
             </div>
-    </footer>
 
+    </footer>
 </body>
 
 </html>
