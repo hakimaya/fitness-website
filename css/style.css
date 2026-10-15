@@ -939,17 +939,16 @@ body.page-program {
 }
 
 body.page-program .upper {
-    border: 3px solid pink;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 120px;
     align-items: center;
     height: 200px;
     flex-wrap: wrap;
 }
 
 body.page-program #left {
-    border: 3px solid white;
     min-height: 120px;
     width: 270px;
     display: flex;
@@ -959,7 +958,6 @@ body.page-program #left {
 }
 
 body.page-program #right {
-    border: 3px solid white;
     min-height: 120px;
     width: 400px;
     display: flex;
@@ -973,61 +971,60 @@ body.page-program #upperHeading {
 }
 
 body.page-program .lower {
-    border: 3px solid pink;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 29px;
+    gap: 15px;
 }
 
 body.page-program #lilTitle {
     color: #FFE14D;
 }
 
-body.page-program #lowerInfos1,
-body.page-program #lowerInfos2,
-body.page-program #lowerInfos3,
-body.page-program #lowerInfos4 {
-    color:#a3a3a3;
-}
-
 body.page-program .box {
-    border: 3px solid green;
-    width: 250px;
-    height: 400px;
-    border-radius: 4px;
-}
-
-body.page-program #num1,
-body.page-program #num2,
-body.page-program #num3,
-body.page-program #num4 {
-    color:#ffe14d;
-}
-
-body.page-program #box1,
-body.page-program #box2,
-body.page-program #box3,
-body.page-program #box4 {
-    background-color: rgb(109, 62, 4);
-}
-
-body.page-program .container1,
-body.page-program .container2,
-body.page-program .container3,
-body.page-program .container4 {
-    color:#ffe14d;
+    width: 200px;
+    height: 332px;
+    border-radius: 7px;
+    background-color: #060606;
+    padding: 24px;
     display: flex;
-    gap: 15px;
+    flex-direction: column;
 }
 
-body.page-program #box1heading,
-body.page-program #box2heading,
-body.page-program #box3heading,
-body.page-program #box4heading {
+body.page-program .box h2 {
     color: white;
+    margin-top: auto;
+    margin-bottom: 12px;
+    line-height: 1;
+    font-size: 20px;
+}
+
+body.page-program .box .tags p {
+   color: #ffe14d;
+   margin: 0;
+   line-height: 1.6;
+   font-size: 12px;
+}
+
+body.page-program .box p {
+   color: grey;
+   margin: 0;
+   line-height: 1.6;
+   font-size: 14px;
+}
+
+body.page-program .tags {
+   margin-top: 10px;
+   display: flex;
+   gap: 16px;
+   color: #ffe14d;
+}
+
+body.page-program .box .num {
+  color: #ffe14d;
+  font-size: 18px;
 }
 
 
