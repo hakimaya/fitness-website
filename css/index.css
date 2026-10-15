@@ -11,6 +11,9 @@ body {
 
 body.accueil {
   min-height: 100vh;
+}
+
+.accueil-fond {
   background-image:
     linear-gradient(
       90deg,
@@ -18,12 +21,12 @@ body.accueil {
       rgba(3, 6, 12, 0.15),
       rgba(3, 6, 12, 0.65)
     ),
-    url("../images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.png");
+    url("/images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.png");
+
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
-
 img {
   display: block;
   max-width: 100%;
@@ -505,5 +508,150 @@ a:focus-visible {
 
   .pied::after {
     font-size: 90px;
+  }
+}
+.choisir {
+  padding: 80px 24px;
+  background-color: #08090b;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.choisir-conteneur {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  gap: 5%;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.choisir-texte {
+  min-width: 0;
+}
+
+.choisir-surtitre {
+  margin: 0 0 24px;
+  color: #ffe600;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.choisir h2 {
+  margin: 0 0 30px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.choisir-description {
+  margin: 0 0 40px;
+  color: #cccccc;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.choisir-avantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 24px;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.choisir-avantages li {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.choisir-avantages span {
+  color: #ffe600;
+  margin-right: 6px;
+}
+
+.choisir-bouton {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ffe600;
+  color: #111111;
+  border-radius: 3px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.choisir-bouton:hover {
+  background-color: #fff16a;
+}
+
+.choisir-bouton:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.choisir-image {
+  display: block;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .choisir {
+    padding: 60px 24px;
+  }
+
+  .choisir h2 {
+    font-size: 46px;
+  }
+
+  .choisir-description {
+    font-size: 16px;
+  }
+
+  .choisir-avantages {
+    gap: 20px;
+  }
+
+  .choisir-image {
+    height: 560px;
+  }
+}
+
+@media (max-width: 700px) {
+  .choisir-conteneur {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .choisir-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .choisir {
+    padding: 40px 16px;
+  }
+
+  .choisir-surtitre {
+    font-size: 12px;
+  }
+
+  .choisir h2 {
+    font-size: 40px;
+  }
+
+  .choisir-avantages {
+    grid-template-columns: 1fr;
+  }
+
+  .choisir-image {
+    height: 320px;
   }
 }
