@@ -481,10 +481,7 @@ a:focus-visible {
   cursor: pointer;
 }
 
-.cache {
-  position: absolute;
-  left: -9999px;
-}
+
 
 .pied-bas {
   position: relative;
@@ -653,5 +650,101 @@ a:focus-visible {
 
   .choisir-image {
     height: 320px;
+  }
+}
+
+
+.statistiques {
+  padding: 0 24px 60px;
+  background-color: #08090b;
+  color: white;
+}
+
+.statistiques-conteneur {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statistique {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  padding: 32px;
+  background-color: #111111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.statistique-coachs {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/04c2b564be4479e6e297bc7969eb41120f293ebb.png");
+}
+
+.statistique-membres {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/7caab576344e5f34021b5f7fbac69f6c69dbc2f9.png");
+}
+
+.statistique-fidelite {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/5b67db0ffecff4365b3935119dce7bd75e065655.png");
+}
+
+.statistique p {
+  max-width: 250px;
+  margin: 0 0 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #eeeeee;
+}
+
+.statistique strong {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  color: #ffe600;
+  text-shadow: 0 0 24px rgba(255, 230, 0, 0.35);
+}
+
+@media (max-width: 900px) {
+  .statistique {
+    min-height: 240px;
+    padding: 24px;
+  }
+
+  .statistique strong {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 600px) {
+  .statistiques {
+    padding: 0 16px 40px;
+  }
+
+  .statistiques-conteneur {
+    grid-template-columns: 1fr;
+  }
+
+  .statistique {
+    min-height: 200px;
   }
 }
