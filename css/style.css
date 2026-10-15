@@ -1,0 +1,1606 @@
+/* ====================== HOME PAGE ====================== */
+body.page-home * {
+  box-sizing: border-box;
+}
+
+body.page-home {
+  margin: 0;
+  background-color: #08090b;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+body.page-home.accueil {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(3, 6, 12, 0.65),
+      rgba(3, 6, 12, 0.15),
+      rgba(3, 6, 12, 0.65)
+    ),
+    url("../images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+body.page-home img {
+  display: block;
+  max-width: 100%;
+}
+
+body.page-home header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1440px;
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 24px 40px;
+}
+
+body.page-home .logo {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+body.page-home .logo img {
+  width: 100px;
+  height: auto;
+}
+
+body.page-home nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+body.page-home nav a {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+body.page-home nav a:hover {
+  color: #ffe600;
+}
+
+body.page-home .btn {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 12px 25px;
+  background-color: #f5f5f5;
+  color: #111111;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 21px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+body.page-home .btn:hover {
+  background-color: #ffe600;
+}
+
+body.page-home #accueil {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  column-gap: 48px;
+  row-gap: 48px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 40px 40px;
+}
+
+body.page-home .accueuil1 {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+
+body.page-home #proverbe {
+  margin: 0 0 18px;
+  color: #ffe600;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+body.page-home #proverbe::before {
+  content: none;
+}
+
+body.page-home .titre {
+  margin: 0;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+body.page-home .titre .contour {
+  color: transparent;
+  -webkit-text-stroke: 1.5px white;
+}
+
+body.page-home .avis {
+  display: inline-block;
+  margin: 40px 0 0;
+  padding: 15px 20px;
+  background-color: #f3f3f3;
+  color: #454545;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+body.page-home .avis .etoile {
+  margin-right: 8px;
+  color: #111111;
+}
+
+body.page-home .accueil2 {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding-top: 70px;
+}
+
+body.page-home .experience {
+  width: 180px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-bottom: 60px;
+  padding-left: 18px;
+  border-left: 2px solid #ffe600;
+}
+
+body.page-home .experience h6 {
+  margin: 0 0 8px;
+  color: #cccccc;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+body.page-home .experience h3 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body.page-home .accueil2 > p {
+  width: 100%;
+  max-width: 300px;
+  margin: auto 0 12px;
+  color: #eeeeee;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+body.page-home .accueil2 .bouton-principal {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ffe600;
+  color: #111111;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+body.page-home .accueil2 .bouton-principal:hover {
+  background-color: #fff16a;
+}
+
+body.page-home #accueil > video {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: end;
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 0;
+}
+
+body.page-home a:focus-visible {
+  outline: 2px solid #ffe600;
+  outline-offset: 5px;
+}
+
+@media (max-width: 1100px)  {
+body.page-home header {
+    padding: 24px;
+    gap: 20px;
+  }
+
+body.page-home nav {
+    gap: 18px;
+  }
+
+body.page-home #accueil {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    column-gap: 32px;
+    padding: 80px 24px 32px;
+  }
+
+body.page-home .titre {
+    font-size: 76px;
+  }
+
+body.page-home .accueil2 {
+    padding-top: 45px;
+  }
+
+body.page-home .experience {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px)  {
+body.page-home header {
+    flex-wrap: wrap;
+  }
+
+body.page-home nav {
+    order: 3;
+    width: 100%;
+    gap: 20px;
+  }
+
+body.page-home #accueil {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 40px;
+    padding-top: 60px;
+  }
+
+body.page-home .titre {
+    font-size: 80px;
+  }
+
+body.page-home .accueil2 {
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 0;
+  }
+
+body.page-home .experience {
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+body.page-home .accueil2 > p {
+    max-width: 360px;
+    margin: 0 0 12px;
+  }
+
+body.page-home #accueil > video {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 480px)  {
+body.page-home header {
+    padding: 20px 16px;
+    gap: 20px;
+  }
+
+body.page-home .logo img {
+    width: 85px;
+  }
+
+body.page-home .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+  }
+
+body.page-home nav {
+    gap: 12px 16px;
+  }
+
+body.page-home nav a {
+    font-size: 12px;
+  }
+
+body.page-home #accueil {
+    padding: 40px 16px 28px;
+    row-gap: 32px;
+  }
+
+body.page-home #proverbe {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+body.page-home .titre {
+    font-size: 54px;
+  }
+
+body.page-home .avis {
+    margin-top: 28px;
+    padding: 12px 16px;
+    font-size: 11px;
+  }
+
+body.page-home .accueil2 > p {
+    font-size: 12px;
+  }
+
+body.page-home #accueil > video {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+body.page-home .barre {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  background-color: #ffe600;
+  color: #333333;
+  text-align: center;
+  overflow: hidden;
+}
+
+body.page-home .barre p {
+  margin: 0;
+  padding: 0 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+body.page-home .barre span {
+  margin: 0 18px;
+}
+
+body.page-home .pied {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 40px 24px;
+  background-color: #08090b;
+  color: white;
+}
+
+body.page-home .pied::after {
+  content: "FITNIX";
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+body.page-home .pied-haut {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+body.page-home .pied-logo img {
+  width: 100px;
+}
+
+body.page-home .pied-texte {
+  max-width: 260px;
+  font-size: 13px;
+}
+
+body.page-home .pied-titre {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+body.page-home .pied a {
+  color: white;
+  text-decoration: none;
+}
+
+body.page-home .pied a:hover {
+  color: #ffe600;
+}
+
+body.page-home .reseaux {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+body.page-home .pied-liens {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 13px;
+}
+
+body.page-home .horaires {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+
+body.page-home .horaires li {
+  margin-bottom: 8px;
+}
+
+body.page-home .horaires .jaune {
+  color: #ffe600;
+  font-weight: 700;
+}
+
+body.page-home .newsletter {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 13px;
+}
+
+body.page-home .newsletter-form {
+  display: flex;
+  max-width: 300px;
+}
+
+body.page-home .newsletter-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #333333;
+  background: transparent;
+  color: white;
+}
+
+body.page-home .newsletter-form button {
+  width: 44px;
+  border: none;
+  background-color: #ffe600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.page-home .cache {
+  position: absolute;
+  left: -9999px;
+}
+
+body.page-home .pied-bas {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #222222;
+  font-size: 11px;
+  color: #bbbbbb;
+}
+
+body.page-home .pied-bas p {
+  margin: 0;
+}
+
+@media (max-width: 800px)  {
+body.page-home .pied-haut {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+body.page-home .pied::after {
+    font-size: 90px;
+  }
+}
+
+
+/* ====================== ABOUT PAGE ====================== */
+body.page-about * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     
+     
+     
+     
+ }
+
+body.page-about {
+    font-family: "Inter", sans-serif;
+     font-size: 16px;
+     line-height: 1.5;   
+ }
+
+body.page-about .apropos-contenu {
+     display: flex;
+     gap: 150px;
+     align-items: center;
+     margin-top: 50px;
+ }
+
+body.page-about .equipe {
+     height: 500px;
+     width: 400px;
+     
+     margin-left: 120px;
+     border-radius: 5px;
+ }
+
+body.page-about h1,
+body.page-about h2 {
+     margin: 5px;
+     color: yellow;
+     font-size: 10px;
+     font-family: "Bebas Neue", sans-serif;
+ }
+
+body.page-about .p1 {
+     font-size: 50px;
+     padding: 0;
+     margin: 0;
+ }
+
+body.page-about .t3 {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items: start;
+ }
+
+body.page-about .conatainer {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 10px;
+     padding: 50px 0;
+
+ }
+
+body.page-about .btna {
+     display: inline-block;
+     background-color: yellow;
+     margin: 20px;
+     width: 200px;
+     height: 50px;
+     border-radius: 8px;
+     font-family: "Bebas Neue", sans-serif;
+     font-size: 16px;
+     font-weight: 15px;
+     text-align: center;
+     cursor: pointer;
+     color: black;
+     border: none;
+ }
+
+body.page-about .team {
+     display: flex;
+     margin-left: 120px;
+     gap: 25px;
+
+ }
+
+body.page-about .team img {
+     height: 400px;
+     width: 250px;
+     
+     border-radius: 10px;
+
+ }
+
+body.page-about .subtitle {
+    font-family: "Bebas Neue", sans-serif;
+     color: #FFE34F;
+     text-transform: uppercase;
+     font-size: 15px;
+     
+ }
+
+body.page-about .our {
+    margin-left: 120px;
+}
+
+body.page-about h2 {
+    font-family: "Bebas Neue", sans-serif;
+     font-size: 38px;
+     line-height: 1.15;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     color: white;
+ }
+
+body.page-about .p2 {
+     display: flex;
+     gap: 200px;
+     font-family:  "Bebas Neue", sans-serif;
+     font-size: 15px;
+
+ }
+
+body.page-about .pad {
+     margin-left: 10px;
+     margin-top: 100px;
+     font-family:  "Bebas Neue", sans-serif;;
+ }
+
+body.page-about .pa {
+     font-family: "Bebas Neue", sans-serif;
+     font-size: 11px;
+ }
+
+@media screen and (max-width: 600px)  {
+body.page-about {
+        margin: 0;
+        padding: 0;
+    }
+
+body.page-about .apropos-contenu {
+         display: flex;
+         flex-direction: column;
+         gap: 50px;
+     }
+
+body.page-about .conatainer {
+        display: block;
+        padding: 10px;
+     }
+
+body.page-about .p1 {
+        font-size: 30px;
+     }
+
+body.page-about .our {
+        margin: 0;
+     }
+
+body.page-about .btna {
+        margin: 0;
+     }
+
+body.page-about .pa {
+        margin: 15px;
+     }
+
+body.page-about .pad {
+        margin:20px ;
+     }
+
+body.page-about .pad p {
+        margin: 15px;
+        font-size: 20px;
+     }
+
+body.page-about .team {
+        margin: 15px;
+        gap: 5px;
+     }
+
+body.page-about .subtitle {
+        font-size: 20px;
+        margin: 10px;
+     }
+
+body.page-about .apropos-contenu img {
+        display: flex;
+        justify-content: start;
+        margin: auto;   
+     }
+
+body.page-about .pa {
+         font-size: 20px;
+         align-self: center;
+         font-family:  "Bebas Neue", sans-serif;;
+     }
+
+body.page-about .p2 {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+    font-family:  "Bebas Neue", sans-serif;;
+
+ }
+
+body.page-about .team {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+body.page-about .para {
+    display: grid;
+    place-items: center;
+}
+}
+
+body.page-about .conatainer img {
+     
+ }
+
+body.page-about .icone {
+     display: flex;
+     gap: 10px;
+ }
+
+
+/* ====================== PROGRAM PAGE ====================== */
+body.page-program * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body.page-program {
+    background-color: #0e0e0e;
+}
+
+body.page-program .upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 120px;
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+body.page-program #left {
+    min-height: 120px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+body.page-program #right {
+    min-height: 120px;
+    width: 400px;
+    display: flex;
+    flex-direction: center;
+    align-items: flex-end;
+    color: #a3a3a3;
+}
+
+body.page-program #upperHeading {
+    color: white;
+}
+
+body.page-program .lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+body.page-program #lilTitle {
+    color: #FFE14D;
+}
+
+body.page-program .box {
+    width: 200px;
+    height: 332px;
+    border-radius: 7px;
+    background-color: #060606;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+body.page-program .box h2 {
+    color: white;
+    margin-top: auto;
+    margin-bottom: 12px;
+    line-height: 1;
+    font-size: 20px;
+}
+
+body.page-program .box .tags p {
+   color: #ffe14d;
+   margin: 0;
+   line-height: 1.6;
+   font-size: 12px;
+}
+
+body.page-program .box p {
+   color: grey;
+   margin: 0;
+   line-height: 1.6;
+   font-size: 14px;
+}
+
+body.page-program .tags {
+   margin-top: 10px;
+   display: flex;
+   gap: 16px;
+   color: #ffe14d;
+}
+
+body.page-program .box .num {
+  color: #ffe14d;
+  font-size: 18px;
+}
+
+
+/* ====================== GALLERY PAGE ====================== */
+body.page-gallery {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+body.page-gallery h1,
+body.page-gallery h2,
+body.page-gallery h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+body.page-gallery header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+body.page-gallery nav {
+    display: flex;
+    gap: 2rem;
+}
+
+body.page-gallery nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;}
+
+body.page-gallery nav a:hover {
+    color: #ffe04d;
+}
+
+body.page-gallery .titleingallery {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffe04d;
+    flex-shrink: 0;
+}
+
+body.page-gallery .titleingallery::before {
+    content:"";
+    width: 30px;
+    height: 3px;
+    background-color: #ffe04d;
+}
+
+body.page-gallery .btn {
+    background-color: #ffff;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 3px;
+    font-family: "Bebas Neue", sans-serif;
+    transition: background-color 0.2s;
+    letter-spacing: 1px;
+}
+
+body.page-gallery .menu-toggle {
+    display:none;
+    border: none;
+    background:none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+body.page-gallery .main-nav .mobilecontact {
+    display: none;
+}
+
+@media (max-width: 1024px)  {
+body.page-gallery header {
+        position: relative;
+        padding: 16px 42px;
+    }
+
+body.page-gallery .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: #171717;
+        padding: 20px;
+        z-index: 10;
+    }
+
+body.page-gallery .menu-toggle {
+        display: block;
+    }
+
+body.page-gallery .main-nav.is-open {
+        display: flex;
+    }
+
+body.page-gallery .desktop-contact {
+        display: none;
+    }
+
+body.page-gallery .main-nav .mobilecontact {
+        display: block;
+    }
+}
+
+/* ===== BEFORE & AFTER ===== */
+
+body.page-gallery .gallery-section {
+    padding: 70px 96px;
+}
+
+body.page-gallery .titleingallery {
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+body.page-gallery .titleingallery::before {
+    flex-shrink: 0;
+}
+
+body.page-gallery .textgallery {
+    padding: 0;
+    margin: 0 0 40px;
+    font-size: 52px;
+    line-height: 1.1;
+    max-width: 750px;
+}
+
+body.page-gallery .transformations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+body.page-gallery .transformation-card {
+    min-width: 0;
+}
+
+body.page-gallery .transformation-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+body.page-gallery .transformation-images img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+body.page-gallery .image-labels {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    color: #ffe04d;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+body.page-gallery .transformation-card h2 {
+    font-size: 24px;
+    margin: 8px 0 0;
+}
+
+/* ===== REVIEWS ===== */
+
+body.page-gallery .reviews-section {
+    padding: 70px 96px;
+    background-color: #141414;
+}
+
+body.page-gallery .section-label {
+    color: #ffe04d;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 0 16px;
+}
+
+body.page-gallery .reviews-title {
+    font-size: 52px;
+    line-height: 1.1;
+    margin: 0 0 40px;
+}
+
+body.page-gallery .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+body.page-gallery .review-card {
+    background-color: #222222;
+    padding: 28px;
+    border: 1px solid #333333;
+}
+
+body.page-gallery .stars {
+    color: #ffe04d;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+body.page-gallery .review-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #dddddd;
+    margin: 20px 0 28px;
+}
+
+body.page-gallery .review-card h3 {
+    font-size: 22px;
+    margin: 0 0 6px;
+}
+
+body.page-gallery .review-card span {
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+body.page-gallery .pied {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 40px 24px;
+  background-color: #08090b;
+  color: white;
+}
+
+body.page-gallery .pied::after {
+  content: "FITNIX";
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+body.page-gallery .pied-haut {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+body.page-gallery .pied-logo img {
+  width: 100px;
+}
+
+body.page-gallery .pied-texte {
+  max-width: 260px;
+  font-size: 13px;
+}
+
+body.page-gallery .pied-titre {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+body.page-gallery .pied a {
+  color: white;
+  text-decoration: none;
+}
+
+body.page-gallery .pied a:hover {
+  color: #ffe600;
+}
+
+body.page-gallery .reseaux {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+body.page-gallery .pied-liens {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 13px;
+}
+
+body.page-gallery .horaires {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+
+body.page-gallery .horaires li {
+  margin-bottom: 8px;
+}
+
+body.page-gallery .horaires .jaune {
+  color: #ffe600;
+  font-weight: 700;
+}
+
+body.page-gallery .newsletter {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 13px;
+}
+
+body.page-gallery .newsletter-form {
+  display: flex;
+  max-width: 300px;
+}
+
+body.page-gallery .newsletter-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #333333;
+  background: transparent;
+  color: white;
+}
+
+body.page-gallery .newsletter-form button {
+  width: 44px;
+  border: none;
+  background-color: #ffe600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.page-gallery .cache {
+  position: absolute;
+  left: -9999px;
+}
+
+body.page-gallery .pied-bas {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #222222;
+  font-size: 11px;
+  color: #bbbbbb;
+}
+
+body.page-gallery .pied-bas p {
+  margin: 0;
+}
+
+@media (max-width: 800px)  {
+body.page-gallery .pied-haut {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+body.page-gallery .pied::after {
+    font-size: 90px;
+  }
+}
+
+
+/* ====================== CONTACT PAGE ====================== */
+body.page-contact * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.page-contact {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+body.page-contact h1,
+body.page-contact h2,
+body.page-contact h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+body.page-contact header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+body.page-contact nav {
+    display: flex;
+    gap: 2rem;
+}
+
+body.page-contact nav a {
+    color: white;
+    text-decoration: none;
+}
+
+body.page-contact nav a:hover {
+    color: #ffe04d;
+}
+
+body.page-contact .btn {
+    background-color: #ffff;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 3px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    transition: background-color 0.2s;
+}
+
+body.page-contact .btn:hover {
+    background-color: #ffe04d;
+}
+
+body.page-contact .bodi {
+    font-family: "Bebas Neue", sans-serif;
+    background-image: url(../images/7caab576344e5f34021b5f7fbac69f6c69dbc2f9.png);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    height: 600px;
+    margin: 70px;
+}
+
+body.page-contact .left {
+    flex: 1;
+    max-width: 400px;
+}
+
+body.page-contact .subtitle {
+    color: #FFE34F;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+body.page-contact .left h2 {
+    font-size: 60px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+body.page-contact .description {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+}
+
+body.page-contact .s1,
+body.page-contact .s2,
+body.page-contact .s3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+body.page-contact .s1 img,
+body.page-contact .s2 img,
+body.page-contact .s3 img {
+    width: 28px;
+    height: 28px;
+}
+
+body.page-contact .rigth {
+    background-color: #2B272B;
+    width: 325px;
+    padding: 27px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+body.page-contact .rigth form h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+body.page-contact .rigth-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body.page-contact .rigth-input input,
+body.page-contact .rigth-input textarea {
+    width: 100%;
+    background-color: #101010;
+    color: white;
+    border: 1px solid #222;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+body.page-contact .rigth-input textarea {
+    height: 67px;
+    resize: vertical;
+}
+
+body.page-contact .rigth button {
+    background-color: #FFE34F;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 270px;
+    height: 30px;
+}
+
+body.page-contact .rigth button:hover {
+    background-color: #ffd34f;
+}
+
+body.page-contact #section {
+    display: flex;
+    flex-direction: row;
+    height: 420px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+body.page-contact .ss summary {
+    font-size: large;
+}
+
+body.page-contact .ss summary {
+    font-size: large;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.page-contact .ss summary::-webkit-details-marker {
+    display: none;
+}
+
+body.page-contact .ss summary::after {
+    content: "+";
+    color: #ffe04d;
+    background-color: black;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 2px 7px;
+    margin-left: 10px;
+}
+
+body.page-contact .ss[open] summary::after {
+    content: "−";
+}
+
+body.page-contact .ss p {
+    font-size: small;
+    font-family: "Courier New", Courier, monospace;
+}
+
+body.page-contact .ss {
+    height: 50px;
+}
+
+body.page-contact .ss p {
+    font-size: small;
+    font-family: "Courier New", Courier, monospace;
+}
+
+body.page-contact .ss {
+    height: 50px;
+}
+
+body.page-contact .left2 h2 {
+    font-size: 60px;
+}
+
+body.page-contact .fa-subtitle {
+    color: #ffd34f
+}
+
+body.page-contact .faq-description {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+}
+
+@media (max-width: 1024px)  {
+body.page-contact header {
+        padding: 1rem 2rem;
+    }
+
+body.page-contact nav {
+        gap: 1rem;
+    }
+
+body.page-contact #section {
+        padding: 40px 30px;
+        height: auto;
+        gap: 40px;
+    }
+
+body.page-contact .left2,
+body.page-contact .right2 {
+        flex: 1;
+        min-width: 0;
+    }
+
+body.page-contact .left2 h2 {
+        font-size: 48px;
+    }
+
+body.page-contact .bodi {
+        margin: 40px 25px;
+        padding: 35px;
+        height: auto;
+        gap: 35px;
+    }
+
+body.page-contact .left {
+        min-width: 0;
+    }
+
+body.page-contact .left h2 {
+        font-size: 48px;
+    }
+
+body.page-contact .rigth {
+        width: 325px;
+    }
+
+body.page-contact .rigth button {
+        width: 100%;
+    }
+
+body.page-contact .faq-description br,
+body.page-contact .ss p br,
+body.page-contact .description br {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)  {
+body.page-contact header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+body.page-contact header .logo img {
+        max-width: 130px;
+        height: auto;
+    }
+
+body.page-contact nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+body.page-contact nav a {
+        font-size: 13px;
+    }
+
+body.page-contact header .btn {
+        padding: 10px 18px;
+    }
+
+body.page-contact #section {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 50px 20px;
+        gap: 35px;
+    }
+
+body.page-contact .left2 h2 {
+        font-size: 42px;
+    }
+
+body.page-contact .faq-description {
+        line-height: 1.7;
+    }
+
+body.page-contact .right2 {
+        width: 100%;
+    }
+
+body.page-contact .ss {
+        height: auto;
+        min-height: 50px;
+        padding: 12px 0;
+    }
+
+body.page-contact .ss summary {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+body.page-contact .ss p {
+        line-height: 1.7;
+        margin-top: 12px;
+    }
+
+body.page-contact .right2>p {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+body.page-contact .bodi {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 20px 12px;
+        padding: 30px 20px;
+        height: auto;
+        gap: 35px;
+        background-position: center;
+        background-size: cover;
+    }
+
+body.page-contact .left {
+        max-width: none;
+        width: 100%;
+    }
+
+body.page-contact .left h2 {
+        font-size: 42px;
+    }
+
+body.page-contact .description {
+        line-height: 1.7;
+    }
+
+body.page-contact .s1,
+body.page-contact .s2,
+body.page-contact .s3 {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+body.page-contact .rigth {
+        width: 100%;
+        padding: 22px;
+    }
+
+body.page-contact .rigth button {
+        width: 100%;
+        min-height: 40px;
+    }
+}
