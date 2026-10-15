@@ -32,9 +32,6 @@ nav a {
 nav a:hover {
     color: #ffe04d;
 }
-h1{
-    padding: 50px;
-}
 
 
 
@@ -45,7 +42,6 @@ h1{
     letter-spacing: 1px;
     font-size: 18px;
     color: #ffe04d;
-    padding: 50px;
     flex-shrink: 0;
 }
 .titleingallery::before{
@@ -75,4 +71,298 @@ h1{
 }
 .main-nav .mobilecontact{
     display: none;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        position: relative;
+        padding: 16px 42px;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: #171717;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav.is-open {
+        display: flex;
+    }
+
+    .desktop-contact {
+        display: none;
+    }
+
+    .main-nav .mobilecontact {
+        display: block;
+    }
+}
+
+
+/* ===== BEFORE & AFTER ===== */
+
+.gallery-section {
+    padding: 70px 96px;
+}
+
+.titleingallery {
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.titleingallery::before {
+    flex-shrink: 0;
+}
+
+.textgallery {
+    padding: 0;
+    margin: 0 0 40px;
+    font-size: 52px;
+    line-height: 1.1;
+    max-width: 750px;
+}
+
+.transformations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.transformation-card {
+    min-width: 0;
+}
+
+.transformation-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.transformation-images img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.image-labels {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    color: #ffe04d;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.transformation-card h2 {
+    font-size: 24px;
+    margin: 8px 0 0;
+}
+
+
+/* ===== REVIEWS ===== */
+
+.reviews-section {
+    padding: 70px 96px;
+    background-color: #141414;
+}
+
+.section-label {
+    color: #ffe04d;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 0 16px;
+}
+
+.reviews-title {
+    font-size: 52px;
+    line-height: 1.1;
+    margin: 0 0 40px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.review-card {
+    background-color: #222222;
+    padding: 28px;
+    border: 1px solid #333333;
+}
+
+.stars {
+    color: #ffe04d;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.review-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #dddddd;
+    margin: 20px 0 28px;
+}
+
+.review-card h3 {
+    font-size: 22px;
+    margin: 0 0 6px;
+}
+
+.review-card span {
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+
+.pied {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 40px 24px;
+  background-color: #08090b;
+  color: white;
+}
+
+.pied::after {
+  content: "FITNIX";
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.pied-haut {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.pied-logo img {
+  width: 100px;
+}
+
+.pied-texte {
+  max-width: 260px;
+  font-size: 13px;
+}
+
+.pied-titre {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.pied a {
+  color: white;
+  text-decoration: none;
+}
+
+.pied a:hover {
+  color: #ffe600;
+}
+
+.reseaux {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+.pied-liens {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.horaires {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+
+.horaires li {
+  margin-bottom: 8px;
+}
+
+.horaires .jaune {
+  color: #ffe600;
+  font-weight: 700;
+}
+
+.newsletter {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 13px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 300px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #333333;
+  background: transparent;
+  color: white;
+}
+
+.newsletter-form button {
+  width: 44px;
+  border: none;
+  background-color: #ffe600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cache {
+  position: absolute;
+  left: -9999px;
+}
+
+.pied-bas {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #222222;
+  font-size: 11px;
+  color: #bbbbbb;
+}
+
+.pied-bas p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .pied-haut {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .pied::after {
+    font-size: 90px;
+  }
 }
