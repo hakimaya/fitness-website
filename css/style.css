@@ -17,8 +17,14 @@ body {
     font-family: "Inter", Arial, sans-serif;
 }
 
-img {
+img,
+iframe,
+video {
     max-width: 100%;
+}
+
+img {
+    height: auto;
 }
 
 h1,
@@ -30,14 +36,14 @@ h3 {
 
 button,
 input,
-textarea {
+textarea,
+select {
     font: inherit;
 }
 
 a {
     text-decoration: none;
 }
-
 
 /* =========================================
    GLOBAL HEADER
@@ -68,8 +74,8 @@ body .siteheader .logo img {
 }
 
 body .siteheader .main-nav {
-    display: flex;
     position: static;
+    display: flex;
     align-items: center;
     flex-direction: row;
     gap: 32px;
@@ -130,13 +136,16 @@ body .siteheader .menu-toggle {
         padding: 16px 42px;
         flex-wrap: nowrap;
     }
+
     body .siteheader .menu-toggle {
         display: block;
         flex-shrink: 0;
     }
+
     body .siteheader .desktop-contact {
         display: none;
     }
+
     body .siteheader .main-nav {
         display: none;
         position: absolute;
@@ -152,9 +161,11 @@ body .siteheader .menu-toggle {
         box-shadow: 0 12px 25px rgba(0, 0, 0, .3);
         z-index: 1001;
     }
+
     body .siteheader .main-nav.is-open {
         display: flex;
     }
+
     body .siteheader .main-nav a,
     body .siteheader .main-nav a:visited {
         display: block;
@@ -164,9 +175,11 @@ body .siteheader .menu-toggle {
         font-size: 16px;
         text-decoration: none;
     }
+
     body .siteheader .main-nav a:hover {
         color: #ffe04d;
     }
+
     body .siteheader .main-nav .mobilecontact {
         display: block;
     }
@@ -176,11 +189,11 @@ body .siteheader .menu-toggle {
     body .siteheader {
         padding: 16px 20px;
     }
+
     body .siteheader .logo img {
         width: 85px;
     }
 }
-
 
 /* =========================================
    HOME
@@ -188,7 +201,7 @@ body .siteheader .menu-toggle {
 
 body.page-home .fond-accueil {
     min-height: 100vh;
-    background-image: linear-gradient( 90deg, rgba(3, 6, 12, .65), rgba(3, 6, 12, .15), rgba(3, 6, 12, .65)), url("../images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.png");
+    background-image: linear-gradient(90deg, rgba(3, 6, 12, .65), rgba(3, 6, 12, .15), rgba(3, 6, 12, .65)), url("../images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.png");
     background-size: cover;
     background-position: center;
 }
@@ -266,7 +279,7 @@ body.page-home .experience h3 {
     font-weight: 700;
 }
 
-body.page-home .accueil2>p {
+body.page-home .accueil2 > p {
     margin: auto 0 12px;
     color: #eee;
     font-size: 12px;
@@ -415,18 +428,23 @@ body.page-home .stat-carte strong {
         grid-template-columns: 1fr;
         padding: 60px 24px;
     }
+
     body.page-home .accueil2 {
         padding-top: 0;
     }
+
     body.page-home .experience {
         margin: 0 0 24px;
     }
-    body.page-home .accueil2>p {
+
+    body.page-home .accueil2 > p {
         margin: 0 0 16px;
     }
+
     body.page-home .pourquoi-contenu {
         grid-template-columns: 1fr;
     }
+
     body.page-home .pourquoi-image {
         height: 350px;
     }
@@ -436,23 +454,27 @@ body.page-home .stat-carte strong {
     body.page-home .statistiques {
         grid-template-columns: 1fr;
     }
+
     body.page-home .stat-carte {
         min-height: 230px;
     }
+
     body.page-home .pourquoi {
         padding: 40px 20px;
     }
+
     body.page-home .pourquoi h2 {
         font-size: 38px;
     }
+
     body.page-home .pourquoi-avantages {
         grid-template-columns: 1fr;
     }
+
     body.page-home .barre p {
         line-height: 1.8;
     }
 }
-
 
 /* =========================================
    ABOUT
@@ -564,7 +586,7 @@ body.page-about .team img {
     object-fit: cover;
 }
 
-body.page-about .team>div>p {
+body.page-about .team > div > p {
     margin-bottom: 6px;
 }
 
@@ -573,15 +595,18 @@ body.page-about .team>div>p {
         gap: 35px;
         padding: 20px;
     }
+
     body.page-about .equipe {
         width: 40%;
         height: 420px;
         margin-left: 0;
     }
+
     body.page-about .team {
         grid-template-columns: repeat(2, 1fr);
         padding: 0 20px;
     }
+
     body.page-about .our {
         margin-left: 20px;
     }
@@ -592,38 +617,45 @@ body.page-about .team>div>p {
         flex-direction: column;
         padding: 20px;
     }
+
     body.page-about .equipe {
         width: 100%;
         max-width: 400px;
         height: auto;
     }
+
     body.page-about .p1 {
         font-size: 34px;
     }
+
     body.page-about .conatainer {
         grid-template-columns: 1fr;
         padding: 20px 0;
     }
+
     body.page-about .pad {
         margin: 40px 20px;
     }
+
     body.page-about .our {
         margin: 0;
     }
+
     body.page-about .p2 {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
     }
+
     body.page-about .team {
         gap: 15px;
         padding: 0;
     }
+
     body.page-about .team img {
         height: 230px;
     }
 }
-
 
 /* =========================================
    PROGRAM
@@ -692,7 +724,7 @@ body.page-program .box h2 {
     font-size: 26px;
 }
 
-body.page-program .box>p:not(.num) {
+body.page-program .box > p:not(.num) {
     color: #999;
     font-size: 14px;
     line-height: 1.6;
@@ -716,16 +748,17 @@ body.page-program .tags p {
         gap: 20px;
         padding: 40px 20px;
     }
+
     body.page-program #left,
     body.page-program #right {
         width: 100%;
     }
+
     body.page-program .box {
         width: 100%;
         max-width: 400px;
     }
 }
-
 
 /* =========================================
    GALLERY
@@ -866,9 +899,10 @@ body.page-gallery .review-card span {
     body.page-gallery .reviews-section {
         padding: 50px 42px;
     }
+
     body.page-gallery .transformations,
     body.page-gallery .reviews-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -877,26 +911,28 @@ body.page-gallery .review-card span {
     body.page-gallery .reviews-section {
         padding: 40px 20px;
     }
+
     body.page-gallery .transformations,
     body.page-gallery .reviews-grid {
         grid-template-columns: 1fr;
     }
+
     body.page-gallery .textgallery,
     body.page-gallery .reviews-title {
         font-size: 36px;
     }
+
     body.page-gallery .transformation-images img {
         height: 240px;
     }
 }
-
 
 /* =========================================
    CONTACT
 ========================================= */
 
 body.page-contact {
-    background: black;
+    background: #000;
 }
 
 body.page-contact #section {
@@ -908,7 +944,7 @@ body.page-contact #section {
 
 body.page-contact .left2,
 body.page-contact .right2 {
-    flex: 1;
+    flex: 1 1 0;
     min-width: 0;
 }
 
@@ -918,7 +954,8 @@ body.page-contact .fa-subtitle {
 }
 
 body.page-contact .left2 h2 {
-    font-size: 54px;
+    margin: 20px 0;
+    font-size: clamp(38px, 4.2vw, 54px);
     line-height: 1.1;
 }
 
@@ -953,8 +990,9 @@ body.page-contact .bodi {
     justify-content: space-around;
     align-items: center;
     gap: 40px;
+    max-width: 1440px;
     min-height: 600px;
-    margin: 70px;
+    margin: 70px auto;
     padding: 35px;
     border-radius: 6px;
     background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .65)), url("../images/7caab576344e5f34021b5f7fbac69f6c69dbc2f9.png");
@@ -963,8 +1001,9 @@ body.page-contact .bodi {
 }
 
 body.page-contact .left {
-    flex: 1;
-    max-width: 400px;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 500px;
 }
 
 body.page-contact .subtitle {
@@ -973,8 +1012,9 @@ body.page-contact .subtitle {
 }
 
 body.page-contact .left h2 {
-    font-size: 60px;
-    line-height: 1.15;
+    margin: 20px 0;
+    font-size: clamp(38px, 4.4vw, 60px);
+    line-height: 1.1;
 }
 
 body.page-contact .description {
@@ -996,19 +1036,32 @@ body.page-contact .s3 {
 body.page-contact .s1 img,
 body.page-contact .s2 img,
 body.page-contact .s3 img {
+    flex: 0 0 28px;
     width: 28px;
     height: 28px;
+    object-fit: contain;
+}
+
+body.page-contact .left iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 220px;
+    border: 0;
 }
 
 body.page-contact .rigth {
-    width: 325px;
-    flex-shrink: 0;
+    flex: 0 1 360px;
+    width: 100%;
+    max-width: 360px;
+    min-width: 0;
     padding: 27px;
     border-radius: 5px;
     background: #2b272b;
 }
 
 body.page-contact .rigth h2 {
+    margin-top: 0;
     font-size: 24px;
 }
 
@@ -1020,40 +1073,46 @@ body.page-contact .rigth-input {
 
 body.page-contact .rigth-input input,
 body.page-contact .rigth-input textarea {
+    display: block;
     width: 100%;
+    min-width: 0;
     padding: 12px;
-    border: 1px solid #222;
+    border: 1px solid #333;
+    border-radius: 2px;
     background: #101010;
     color: white;
     font-size: 12px;
 }
 
 body.page-contact .rigth-input textarea {
-    min-height: 70px;
+    min-height: 90px;
     resize: vertical;
 }
 
 body.page-contact .rigth button {
     width: 100%;
-    min-height: 40px;
+    min-height: 44px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     background: #ffe34f;
     color: black;
+    font-weight: 700;
     cursor: pointer;
 }
 
-body.page-contact .ss summary {
-    font-size: large;
+body.page-contact .rigth button:hover {
+    background: #ffe600;
 }
 
 body.page-contact .ss summary {
-    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 16px;
     cursor: pointer;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 body.page-contact .ss summary::-webkit-details-marker {
@@ -1062,43 +1121,112 @@ body.page-contact .ss summary::-webkit-details-marker {
 
 body.page-contact .ss summary::after {
     content: "+";
+    flex-shrink: 0;
     color: #ffe04d;
-    background-color: black;
+    background-color: #111;
     border-radius: 50%;
     font-weight: bold;
     padding: 2px 7px;
-    margin-left: 10px;
 }
 
 body.page-contact .ss[open] summary::after {
     content: "−";
 }
 
-@media (max-width: 900px) {
+/* Contact tablet layout */
+@media (max-width: 1024px) {
+    body.page-contact #section {
+        gap: 28px;
+        padding: 55px 5%;
+    }
+
+    body.page-contact .bodi {
+        margin: 40px 5%;
+        padding: 30px;
+        gap: 28px;
+    }
+
+    body.page-contact .left h2 {
+        font-size: clamp(36px, 4.5vw, 48px);
+    }
+
+    body.page-contact .rigth {
+        flex-basis: 320px;
+        max-width: 320px;
+        padding: 22px;
+    }
+}
+
+/* Stack contact sections on smaller tablets and phones */
+@media (max-width: 768px) {
     body.page-contact #section {
         flex-direction: column;
-        padding: 40px 20px;
+        gap: 24px;
+        padding: 40px 24px;
     }
+
+    body.page-contact .left2,
+    body.page-contact .right2 {
+        width: 100%;
+    }
+
     body.page-contact .bodi {
         flex-direction: column;
         align-items: stretch;
+        gap: 30px;
         margin: 30px 20px;
-        padding: 30px 20px;
+        padding: 28px 22px;
     }
+
     body.page-contact .left,
     body.page-contact .rigth {
         width: 100%;
         max-width: none;
     }
-}
 
-@media (max-width: 480px) {
-    body.page-contact .left h2,
-    body.page-contact .left2 h2 {
-        font-size: 38px;
+    body.page-contact .left {
+        flex: auto;
+    }
+
+    body.page-contact .rigth {
+        flex: auto;
+    }
+
+    body.page-contact .left iframe {
+        width: 100%;
+        min-height: 240px;
     }
 }
 
+/* Small phones */
+@media (max-width: 480px) {
+    body.page-contact #section {
+        padding: 32px 18px;
+    }
+
+    body.page-contact .left2 h2,
+    body.page-contact .left h2 {
+        font-size: 38px;
+    }
+
+    body.page-contact .bodi {
+        margin: 20px 12px;
+        padding: 22px 16px;
+        gap: 24px;
+    }
+
+    body.page-contact .rigth {
+        padding: 20px 16px;
+    }
+
+    body.page-contact .ss summary {
+        font-size: 15px;
+    }
+
+    body.page-contact .left iframe {
+        min-height: 200px;
+    }
+}
 
 /* =========================================
    GLOBAL FOOTER - ALL FIVE PAGES
@@ -1272,10 +1400,12 @@ body .pied .pied-bas p {
     body .pied {
         padding: 50px 24px 24px;
     }
+
     body .pied .pied-haut {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 32px;
     }
+
     body .pied::after {
         font-size: 110px;
     }
@@ -1285,18 +1415,22 @@ body .pied .pied-bas p {
     body .pied {
         padding: 40px 20px 24px;
     }
+
     body .pied .pied-haut {
         grid-template-columns: 1fr;
         gap: 32px;
         margin-bottom: 40px;
     }
+
     body .pied .newsletter {
         margin-bottom: 40px;
     }
+
     body .pied .pied-bas {
         flex-direction: column;
         gap: 12px;
     }
+
     body .pied::after {
         font-size: 80px;
     }
