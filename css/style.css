@@ -532,12 +532,12 @@ body.page-about .conatainer {
 body.page-about .icone {
     display: flex;
     align-items: center;
-    gap: 10px;
+    
 }
 
 body.page-about .icone img {
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
 }
 
@@ -658,6 +658,29 @@ body.page-about .team > div > p {
     body.page-about .team img {
         height: 230px;
     }
+
+@media (min-width: 768px) {
+  body.page-about .apropos-contenu { flex-direction: row;
+gap: 20px; }
+  body.page-about .para{
+    flex-direction: column;
+  }
+  body.page-about .pa{
+    font-size: 20px;
+    
+  }
+  body.page-about .subtitle{
+    font-size: 50px;
+  }
+  body.page-about .team{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 15px;
+
+  }
+}
+
 }
 
 /* =========================================
