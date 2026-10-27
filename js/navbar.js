@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ========================================
+
   // 1. RESPONSIVE NAVIGATION
-  // ========================================
+
 
   const menuButton = document.querySelector(
     ".siteheader .menu-toggle"
@@ -56,9 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  // ========================================
   // 2. GALLERY CAROUSEL
-  // ========================================
+
 
   const carousel = document.querySelector(".gallery-carousel");
 
@@ -130,9 +129,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  // ========================================
+
   // 3. MONTHLY / YEARLY PRICING
-  // ========================================
+
 
   const billingButtons = document.querySelectorAll(
     ".billing-btn"
@@ -189,9 +188,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-  // ========================================
+
   // 4. CONTACT FORM — DEMO ONLY
-  // ========================================
+
 
   const contactForm = document.getElementById(
     "contact-form"
@@ -221,9 +220,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  // ========================================
-  // 5. NEWSLETTER — DEMO ONLY
-  // ========================================
+
+  // 5. NEWSLETTER 
 
   const newsletterForms = document.querySelectorAll(
     ".newsletter-form"
